@@ -1,0 +1,444 @@
+:root {
+  --veryDarkBlue: hsl(243, 87%, 12%);
+  --desaturatedBlue: hsl(238, 22%, 44%);
+  --brightBlue: hsl(224, 93%, 58%);
+  --moderateCyan: hsl(170, 45%, 43%);
+  --lightGrayishBlue: hsl(240, 75%, 98%);
+  --lightGray: hsl(0, 0%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  color: white;
+  background-color: var(--brightBlue);
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.img {
+  width: 100%;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.nav-ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(75px, 1fr));
+}
+
+.team {
+  justify-self: center;
+}
+
+.signIn {
+  justify-self: center;
+}
+
+#top-logo {
+  height: 40px;
+  margin-right: 25px
+}
+
+.text-div-text {
+  padding: 0 20px;
+}
+
+.text-div-text h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.text-div-text p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.text-div-input {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.early-access-input-div {
+  padding: 20px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.text-div-email,
+.early-access-input {
+  padding: 10px;
+}
+
+.footer {
+  color: #fff;
+  background-color: var(--veryDarkBlue);
+  padding: 20px;
+}
+
+.illustration1-section {
+  margin-bottom: 50px;
+}
+/*
+main {
+  background-image: url(images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+*/
+.main-background-wrapper {
+  background-color: var(--lightGrayishBlue);
+  margin-top: -10px;
+  padding-bottom: 100px;
+}
+
+main p,
+main h3 {
+  margin: 20px 0;
+  padding: 0 50px;
+}
+
+.paragraph2 {
+  margin-top: 0;
+}
+
+.illustration2 {
+  margin-bottom: 10px;
+}
+
+.fyloWorks {
+  color: var(--moderateCyan);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fyloWorks h3:hover {
+  cursor: pointer;
+}
+
+.line {
+  width: 215px;
+  height: 3px;
+  background-color: var(--moderateCyan);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  max-width: 40ch;
+  padding: 20px;
+}
+
+.figure-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.quotes {
+  align-self: flex-start;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.arrow {
+  height: 32px;
+  cursor: pointer;
+}
+
+.avatar-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.figcaption-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.early-access-div {
+  color: white;
+  background-color: var(--desaturatedBlue);
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.early-access-div p {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36ch;
+}
+
+.bottom-logo {
+  margin-bottom: 10px;
+}
+
+.footer-ul-1,
+.footer-ul-2 {
+  padding: 10px 0;
+  line-height: 2;
+}
+
+.footer li:hover {
+  color: var(--brightBlue);
+}
+
+i:hover {
+  color: var(--brightBlue);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-flex img {
+  margin-right: 20px;
+}
+
+.icons-row-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.illustration-2-desktop {
+  display: none;
+}
+
+.early-access-div h3 {
+  font-size: 20px;
+}
+
+.main-text h3 {
+  font-size: 20px;
+}
+
+/* multiple p-tags in container - caused extra padding on this element */
+
+.avatar-text p {
+  margin: 0;
+  padding: 0;
+  color: var(--lightGray);
+  font-weight: 700;
+}
+
+@media (min-width: 1000px){
+
+
+  .text-div-text p {
+    padding-right: 200px;
+  }
+
+  .nav-wrapper {
+    padding: 20px 50px;
+  }
+
+  .early-access-div h3 {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .nav-ul {
+      display: grid;
+      grid-template-columns: repeat(3, 125px);
+      justify-content: flex-start;
+  }
+
+  .text-div {
+    padding: 40px;
+  }
+
+  .text-div-text h1 {
+    max-width: 25ch;
+    font-size: 28px;
+  }
+
+  .text-div-input {
+    display: flex;
+  }
+
+  .text-div-email {
+    width: 70%;
+  }
+
+  .fyloWorks {
+    position: relative;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .line {
+    position: absolute;
+    bottom: 0;
+    width: 215px;
+    height: 4px;
+    background-color: var(--moderateCyan);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .illustration1-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .illustration2 {
+    display: none;
+  }
+
+  .main-background-wrapper {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text pic"
+                          "quote .";
+  }
+
+  .illustration-2-desktop {
+    display: flex;
+    grid-area: pic;
+  }
+
+  .figure-div {
+    grid-area: quote;
+  }
+
+  .main-text {
+    grid-area: text;
+  }
+
+  .early-access-div {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    text-align: left;
+  }
+
+  .getStartedBtn {
+    width: 50%;
+  }
+
+  .fyloWorks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .line {
+    width: 215px;
+    height: 3px;
+    margin-left: 50px;
+    margin-right: auto;
+  }
+
+  .early-access-div p {
+    margin: 0;
+    max-width: 52ch;
+  }
+
+  .figure-div {
+    margin-top: -200px;
+    margin-left: 50px;
+    width: 60%;
+  }
+
+  blockquote {
+    padding-bottom: 10px;
+  }
+
+  .avatar-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 10px;
+  }
+
+  .avatar-text h4 {
+    padding-bottom: 10px;
+  }
+
+  .avatar-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: auto:
+  }
+
+  .footer-ul-1,
+  .footer-ul-2 {
+    margin-top: 50px;
+  }
+
+  .main-text h3 {
+    font-size: 24px;
+  }
+
+}
